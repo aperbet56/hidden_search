@@ -6,7 +6,7 @@ Création de la fonctionnalité permettant d'afficher ou de faire disparaître u
 
 ## Démonstration
 
-Lien vers le projet :
+Lien vers le projet : https://aperbet56.github.io/hidden_search/
 
 ## Projet développé avec
 
