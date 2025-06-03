@@ -1,0 +1,71 @@
+/**** Importation de la police Roboto ****/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/**** Reset ****/
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input,
+button {
+    border: none;
+}
+
+/**** body ****/
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(62deg, rgba(255, 171, 126, 1.000) 0.000%, rgba(255, 211, 102, 1.000) 50.000%, rgba(247, 206, 104, 1.000) 100.000%)
+}
+
+.search {
+    position: relative;
+    height: 50px;
+}
+
+.input {
+    font-size: 18px;
+    padding: 15px;
+    font-family: "Roboto", sans-serif;
+    transition: width 0.3s ease-in-out;
+}
+
+.input,
+.btn {
+    background-color: #ffffff;
+    border-radius: 6px;
+    height: 50px;
+    width: 50px;
+}
+
+.btn {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn:focus,
+.input:focus {
+    outline: none;
+}
+
+.search.active .input {
+    width: 300px;
+}
+
+.search.active .btn {
+    transform: translateX(250px);
+}
